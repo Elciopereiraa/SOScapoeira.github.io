@@ -1,0 +1,992 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Estilos específicos */
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 30px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #070707;
+}
+main section {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label,
+input,
+textarea {
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    padding: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #555;
+    color: #161515;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+button {
+    /* Estilos anteriores */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f7f7f7;
+    transform: scale(1.1);
+}
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-gallery img {
+    width: 30%;
+    border-radius: 5px;
+}
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.testimonial img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial span {
+    font-weight: bold;
+}
+.image-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.image-carousel img {
+    width: 100%;
+    scroll-snap-align: start;
+}
+.fade-in {
+    opacity: 0;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+.back-to-top {/* botao apenas no final da pagina,pagina voltar a pagina inicial*/
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-to-top.show {
+    display: block;
+}
+/* Cor principal para o cabeçalho */
+header {
+    background-color: #1a237e;
+    color: #0e0d0d;
+}
+/* Estilize o link ao passar o mouse */
+a:hover {
+    background-color: #f3f1ee;
+}
+body {
+    background-color: #f5f5f5;
+}
+#back-to-top-btn {/* botao visivel na pagina voltar a pagina inicial*/
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #b3b1b1;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.7;
+    z-index: 9999;
+}
+
+#back-to-top-btn:hover {
+    opacity: 1;
+}
+/* Estilização do cabeçalho */
+header {
+    background-color: #ededee;
+    color: #161718;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Sua Fonte Personalizada', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Estilização do menu de navegação */
+nav {
+    background-color: #e8e8ec ;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00000000;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #0c0c0c;
+}
+/* Estilização das seções */
+section {
+    padding: 40px;
+}
+
+section h2 {
+    color: #2a36b8;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+    /* Adicione os estilos aqui */
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+/* Container para as seções em formato de colunas */
+.sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* ou justify-content: space-around; */
+}
+
+/* Estilo para cada seção */
+section {
+    width: 48%; /* Ajuste o tamanho das colunas conforme necessário */
+    margin-bottom: 20px;
+}
+/* Container para as seções em formato de colunas */
+.sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* ou justify-content: space-around; */
+}
+
+/* Estilo para cada seção */
+section {
+    width: 48%; /* Ajuste o tamanho das colunas conforme necessário */
+    margin-bottom: 20px;
+}
+/* Estilização do cabeçalho */
+header {
+    background-color: #050505;
+    color: #000000;
+    padding: 20px;
+    text-align: center; /* Centralizar o conteúdo do cabeçalho */
+    font-family: 'Sua Fonte Personalizada', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+/* Estilização do cabeçalho */
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Sua Fonte Personalizada', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    height: 100px; /* Altura do cabeçalho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilização do rodapé */
+footer {
+    background-color: #f1f2f8;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+}
+
+.footer-section p {
+    font-size: 14px;
+}
+
+.footer-section a {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #b3b3b3;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+/* Estilo para as seções */
+section {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Estilo para os ícones sociais */
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+}
+/* Estilos comuns para todas as páginas */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #ebe1e1;
+    padding: 10px;
+    text-align: center;
+    color: #020202;
+}
+
+/* Estilos específicos para botões */
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+/* ... estilos anteriores ... */
+
+#inicio, #sobre, #servicos {
+    display: flex;
+    justify-content: space-around;
+}
+/* Seletor para o título */
+h1 {
+    font-family: "Nome da Fonte", sans-serif; /* Substitua pelo nome da fonte desejada */
+    font-size: 37px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte (bold, normal, etc.) */
+    color: #070707; /* Cor da fonte (vermelho) */
+    text-align: center; /* Alinhamento do texto (centralizado) */
+    /* Outros estilos de fonte, como itálico ou sublinhado, se desejado */
+}
+/* Estilo para centralizar os botões no canto superior */
+.botoes-container {
+    position: absolute;
+    top: 20px; /* Ajuste a distância da borda superior conforme necessário */
+    right: 20px; /* Ajuste a distância da borda direita conforme necessário */
+}
+
+/* Estilo dos botões */
+.botao {
+    background-color: #f2f2f2; /* Defina a cor de fundo que desejar */
+    padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
+    margin: 5px; /* Espaçamento entre os botões */
+    border: none;
+    border-radius: 5px; /* Borda arredondada */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Altere a cor do texto dos botões, se necessário */
+.botao a {
+    color: #333; /* Cor do texto */
+    text-decoration: none;
+}
+/* Estilo para centralizar os botões no canto superior */
+.botoes-container {
+    position: absolute;
+    top: 10px; /* Ajuste a distância da borda superior conforme necessário */
+    right: 10px; /* Ajuste a distância da borda direita conforme necessário */
+}
+
+/* Estilo dos botões */
+.botao {
+    background-color: #3a3131; /* Defina a cor de fundo que desejar */
+    padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
+    margin: 5px; /* Espaçamento entre os botões */
+    border: none;
+    border-radius: 10px; /* Borda arredondada */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Altere a cor do texto dos botões, se necessário */
+.botao a {
+    color: #333; /* Cor do texto */
+    text-decoration: none;
+}
+/* Adicione isso ao seu arquivo CSS */
+
+body {
+    max-width: 100%; /* Define uma largura máxima para o corpo do site */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal se o conteúdo estourar a largura da janela do navegador */
+}
+/* Adicione isso ao seu arquivo CSS */
+
+body {
+    max-width: 100%; /* Define uma largura máxima para o corpo do site */
+    margin: 100 auto; /* Centraliza o conteúdo horizontalmente */
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal se o conteúdo estourar a largura da janela do navegador */
+}
+/* Estilos para a seção extra */
+.secao-extra {
+    background-color: #f5f5f5; /* Cor de fundo da seção */
+    padding: 5px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+}
+
+.botoes-container .botao-extra {
+    background-color: transparent;
+    border: 2px solid #edeff1f1; /* Cor da borda */
+    color: #000000; /* Cor do texto */
+    padding: 5px 5px; /* Espaçamento interno */
+    margin: 10px; /* Espaçamento externo */
+    text-decoration: none; /* Remover sublinhado do link */
+    font-weight: bold; /* Peso da fonte */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.botoes-container .botao-extra:hover {
+    background-color: #f7f7f7; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+/* Estilos para a seção "cordas" */
+.cordas {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.cordas h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.cordas p {
+    font-size: 16px;
+    color: #666;
+}
+
+.cordas h3 {
+    font-size: 20px;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Estilos para os botões da seção extra */
+.botoes-container {
+    margin-top: 20px;
+}
+
+.botao-extra {
+    display: inline-block;
+    padding: 5px 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.botao-extra:hover {
+    background-color: #f5f0f0;
+}
+/* Estilos para a seção "cordas" */
+.cordas {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%; /* Defina a largura para ocupar toda a página */
+}
+
+.cordas h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.cordas p {
+    font-size: 16px;
+    color: #666;
+}
+
+.cordas h3 {
+    font-size: 20px;
+    color: #444;
+    margin-top: 10px;
+}
+/* Estilos para o cabeçalho */
+.meu-cabecalho {
+    background-color: rgb(245, 245, 245); /* Defina a cor desejada, como "red" para vermelho */
+    padding: 10px; /* Ajuste o preenchimento conforme necessário */
+    text-align: center; /* Centralize o conteúdo do cabeçalho */
+}
+
+.meu-cabecalho h1 {
+    color: rgb(12, 11, 11); /* Defina a cor do texto dentro do cabeçalho, por exemplo, branco */
+}
+/* Estilo para as seções .secao */
+.secao {
+    background-color: #f0f0f0;
+    border: 1px solid #3e21e4;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os títulos das seções .secao h2 */
+.secao h2 {
+    font-size: 24px;
+    color: #131212;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o conteúdo das seções .secao p */
+.secao p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilo para as imagens dentro das seções .secao .image-gallery img */
+.secao .image-gallery img {
+    max-width: 100%;
+}
+/* Remover borda ao redor dos botões */
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6e6d6d; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 10px; /* Borda arredondada */
+    margin-right: 1px; /* Espaçamento à direita entre os botões */
+    margin-bottom: 1px; /* Espaçamento inferior entre os botões */
+    font-weight: bold; /* Estilo de fonte em negrito */
+    font-size: 16px; /* Tamanho da fonte */
+    outline: none; /* Remover contorno ao focar no botão */
+
+    /* Estilo ao passar o mouse sobre os botões */
+    &:hover {
+        background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    }
+}
+/* Estilo para o título da seção */
+h1 {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #171718; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    margin-top: 20px; /* Margem superior */
+}
+
+/* Estilo para o conteúdo próximo à seção */
+.secao {
+    text-align: center; /* Alinhamento do conteúdo */
+    font-size: 20px; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    margin-bottom: 20px; /* Margem inferior */
+}
+footer {
+    background-color: #b3b3b3; /* Cor de fundo cinza escuro */
+    color: #ffffff; /* Cor do texto branco */
+    padding: 20px;
+}
+
+.social-icons a {
+    color: #3da77b; /* Cor do ícone branco */
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+/* Estilo padrão para o menu do lado esquerdo */
+.sidebar {
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente fora da tela */
+    height: 100%;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+/* Estilo do ícone do menu */
+.menu-icon {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #8d8c8c;
+    color: #050505;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; /* Coloca o ícone na parte superior */
+}
+
+/* Estilo das barras do ícone */
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Estilo do menu ativo (expandido) */
+.sidebar.active {
+    width: 250px;
+    left: 0;
+}
+
+/* Estilo dos links no menu */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Efeito de transição nas barras do ícone */
+.menu-icon.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.secao-artigos-container {
+    display: flex;
+}
+    .secao-artigos {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;    
+}
+.artigo img {
+    max-width: 400px; /* Defina o tamanho máximo desejado */
+    height: auto; /* Mantém a proporção da imagem */
+}
+.secao-artigos h2 {
+    color: #333; /* Cor do texto do cabeçalho */
+    font-size: 30px; /* Tamanho da fonte do cabeçalho */
+    margin: 10px 0; /* Margem superior e inferior do cabeçalho */
+}
+.secao-artigos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinhar os elementos no topo */
+}
+
+.secao-artigos {
+    flex-basis: calc(33.33% - 20px); /* 20px de margem entre as seções */
+    padding: 10px;
+    text-align: center;
+}
+
+.secao-artigos h2 {
+    color: #070707; /* Cor do texto do cabeçalho */
+    font-size: 24px; /* Tamanho da fonte do cabeçalho */
+    margin: 10px 0; /* Margem superior e inferior do cabeçalho */
+}
+
+.imagem-no-site {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para manter a proporção e cobrir todo o espaço */
+}
+.cabecalho {
+    position: relative; /* Para que a imagem possa ocupar o espaço do cabeçalho */
+    height: 300px; /* Altura do cabeçalho - ajuste conforme necessário */
+}
+
+.imagem-cabecalho {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para manter a proporção e cobrir todo o espaço */
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+   
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-image: url('');
+    background-size: cover;
+    background-position: center top;
+}
+    
+    /* Estilo das outras seções (por exemplo, secao-artigos) */
+    .secao-artigos {
+        /* Outros estilos da seção de artigos */
+        position: relative; /* Adicione esta propriedade para posicionamento relativo */
+        z-index: 2; /* Defina um z-index maior para as outras seções */
+    }
+    
+    /* Outros estilos CSS para as outras seções */
+
+.botoes-container-extra {
+    display: inline-block; /* Permite que os botões se ajustem ao conteúdo */
+    padding: 20px; /* Adicione algum preenchimento interno aos botões */
+}
+
+.botao-extra {
+    color: #00ff00; /* Cor do texto dos botões */
+   
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    margin: 10px; /* Espaçamento externo entre os botões */
+    text-decoration: none; /* Remova o sublinhado padrão dos links */
+}
+/* Estilo da seção de botões com a imagem de fundo */
+.secao-botoes {
+    background-image: url('caminho_para_sua_imagem.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center; /* Centralize os botões horizontalmente */
+    padding: 40px; /* Adicione preenchimento para afastar os botões das bordas */
+    color: white; /* Defina a cor do texto na seção de botões */
+}
+
+/* Estilo das seções separadas (por exemplo, secao-artigos) */
+.secao {
+    /* Outros estilos das seções */
+    color: rgb(3, 3, 3); /* Defina a cor do texto nas seções separadas */
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fff;
+}
+
+.quiz-container {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#score {
+    font-size: 18px;
+}
+/* Estilo para a seção de redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilos para os ícones sociais */
+.redes-sociais a {
+    font-size: 24px; /* Tamanho dos ícones */
+    margin: 0 10px;
+    color: #007bff; /* Cor dos ícones */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Efeito de destaque ao passar o mouse */
+.redes-sociais a:hover {
+    color: #ff4500; /* Cor de destaque ao passar o mouse */
+}
